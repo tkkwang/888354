@@ -10,19 +10,19 @@
 		var arr_txt = str.split(" ");
 		var num = 0;
 		
-		var sch = document.getElementById("txt").value;
+		var stk = document.getElementById("txt").value;
 		var sen = document.querySelector("input[name=cheack_list]:checked").value;
 					if(sen == "yes"){
 						for(var i = 0;i < arr_txt.length; i++){
-							if(arr_txt[i] == sch){
+							if(arr_txt[i] == stk){
 								num++;
 							}
 						}
 					}else if(sen == "no"){
 						for(var i = 0;i < arr_txt.length; i++){
-							sch2 = sch.toLocaleUpperCase();
+							stk2 = stk.toLocaleUpperCase();
 							arr_txt2 = arr_txt[i].toLocaleUpperCase();
-							if(arr_txt2 == sch2){
+							if(arr_txt2 == stk2){
 								num++;
 							}
 						}
